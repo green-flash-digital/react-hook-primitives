@@ -33,6 +33,13 @@ jobs:
       - name: Install Dependencies
         run: yarn install --immutable
 
+      - name: Upload Workspace as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-artifact
+          path: .
+          retention-days: 1
+
   library:
     name: Publish to NPM registry
     needs: setup
@@ -41,6 +48,11 @@ jobs:
     steps:
       - name: Build Project
         run: yarn build
+
+      - name: Download Repository Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: repo-artifact
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
@@ -57,6 +69,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Download Repository Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: repo-artifact
+
       - name: Build Storybook
         run: yarn build-storybook
 
