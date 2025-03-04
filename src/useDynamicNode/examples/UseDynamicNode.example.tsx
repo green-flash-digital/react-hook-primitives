@@ -1,6 +1,7 @@
-import { useDynamicNode } from "#/useDynamicNode/index.js";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+
+import { useDynamicNode } from "#/useDynamicNode/index.js";
 
 export default () => {
   const { getDynamicNode, destroyNode } = useDynamicNode();

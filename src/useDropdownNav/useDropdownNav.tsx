@@ -1,10 +1,11 @@
 import type { RefCallback } from "react";
 import { useCallback, useId, useMemo, useRef } from "react";
 
+import { LOG_UDN } from "./use-dropdown-nav.utils.js";
+
 import type { DropdownOptions } from "#/useDropdown/useDropdown.types.js";
 import { useDropdown } from "#/useDropdown/useDropdown.js";
 
-import { LOG_UDN } from "./use-dropdown-nav.utils.js";
 
 export type UseDropdownNavArgs = DropdownOptions;
 

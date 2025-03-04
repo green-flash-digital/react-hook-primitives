@@ -18,6 +18,7 @@
     "dev": "vite",
     "build": "vite build && yarn types:build",
     "types:build": "yarn tsc --project tsconfig.types.json",
+    "lint": "eslint src/**",
     "cli:build": "",
     "cli:dev": "",
     "storybook": "storybook dev -p 6006",

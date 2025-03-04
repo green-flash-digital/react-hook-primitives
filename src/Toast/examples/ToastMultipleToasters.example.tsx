@@ -6,10 +6,11 @@ import {
 } from "@ngneat/falso";
 import type { FC } from "react";
 
-import { classes } from "#/_utils/public/index.js";
 
 import { Toaster } from "../Toaster.js";
 import { useToast } from "../toast.useToast.js";
+
+import { classes } from "#/_utils/public/index.js";
 
 const divCSS = css`
   width: 400px;

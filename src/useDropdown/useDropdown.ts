@@ -1,13 +1,14 @@
 import { type RefCallback, useCallback, useMemo, useRef } from "react";
 
-import type { FocusableElement } from "#/usePopover/usePopover.js";
-import { usePopover } from "#/usePopover/usePopover.js";
-
 import type { DropdownOptions } from "./useDropdown.types.js";
 import {
   processDropdownOptions,
   setDropdownPositionStyles,
 } from "./useDropdown.utils.js";
+
+import type { FocusableElement } from "#/usePopover/usePopover.js";
+import { usePopover } from "#/usePopover/usePopover.js";
+
 
 export type UseDropdownHandleOpen = (e?: React.MouseEvent) => void;
 
