@@ -1,0 +1,9 @@
+{
+  "extends": "ts-jolt/tsconfig/library-next",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#/*": ["./src/*"]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "react-hook-primitives",
+  "version": "0.1.0",
+  "description": "A collection of foundational, lower-level hooks that can be used to progressively build complex components & interactions; built solely using baseline on web standards.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/green-flash-digital/react-hook-primitives.git"
+  },
+  "author": "Drew DeCarme (drew@greenflash.digital)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/green-flash-digital/react-hook-primitives/issues"
+  },
+  "homepage": "https://github.com/green-flash-digital/react-hook-primitives#readme",
+  "packageManager": "yarn@4.7.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && yarn types:build",
+    "types:build": "yarn tsc --project tsconfig.types.json",
+    "cli:build": "",
+    "cli:dev": "",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.28.1",
+    "isoscribe": "^0.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "ts-jolt": "^0.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@chromatic-com/storybook": "^3.2.5",
+    "@linaria/core": "^6.2.0",
+    "@ngneat/falso": "^7.3.0",
+    "@storybook/addon-essentials": "^8.6.3",
+    "@storybook/addon-onboarding": "^8.6.3",
+    "@storybook/blocks": "^8.6.3",
+    "@storybook/experimental-addon-test": "^8.6.3",
+    "@storybook/react": "^8.6.3",
+    "@storybook/react-vite": "^8.6.3",
+    "@storybook/test": "^8.6.3",
+    "@types/babel__core": "^7",
+    "@types/node": "^22.13.9",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "@vitest/browser": "^3.0.7",
+    "@vitest/coverage-v8": "^3.0.7",
+    "@wyw-in-js/vite": "^0.5.5",
+    "eslint": "^9.21.0",
+    "eslint-config-greenflash": "^0.2.0",
+    "playwright": "^1.50.1",
+    "storybook": "^8.6.3",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.7"
+  }
+}
