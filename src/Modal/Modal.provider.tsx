@@ -1,8 +1,11 @@
 import { type ReactNode, useMemo } from "react";
 
+import type { ModalDefaultState } from "#/useModalDialog/index.js";
+
 import { ModalContext, type ModalContextType } from "./Modal.context.js";
 
-import type { ModalDefaultState } from "#/useModalDialog/index.js";
+
+
 
 
 export type ModalProviderProps<T extends ModalDefaultState> = {

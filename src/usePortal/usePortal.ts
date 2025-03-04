@@ -8,7 +8,7 @@ import {
 } from "react";
 import { createPortal } from "react-dom";
 
-import { useDynamicNode } from "#/useDynamicNode/index.js";
+import { useDynamicNode } from "#/useDynamicNode/useDynamicNode.js";
 
 export const usePortal = () => {
   const { getDynamicNode, destroyNode } = useDynamicNode();

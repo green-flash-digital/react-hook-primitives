@@ -1,7 +1,9 @@
 import path from "node:path";
+
 import react from "@vitejs/plugin-react-swc";
 import wyw from "@wyw-in-js/vite";
 import { defineConfig } from "vite";
+
 import packageJson from "./package.json" with { type: "json"};
 
 export default defineConfig({
