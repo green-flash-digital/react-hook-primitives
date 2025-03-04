@@ -1,4 +1,4 @@
-name: CD - Build & Deploy
+name: CD
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - main # Triggers when a PR is merged into main
 
 jobs:
-  setup:
-    name: Install & Build
+  build-and-deploy:
+    name: Build & Deploy / Publish
     runs-on: ubuntu-latest
 
     steps:
@@ -37,17 +37,17 @@ jobs:
         run: yarn build
 
       # Builds & deploys storybook to CF Pages
-      - name: Storybook::build
+      - name: Storybook | Build
         run: yarn build-storybook
 
-      - name: Storybook::deploy
+      - name: Storybook | Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.GREEN_FLASH_CLOUDFLARE_API_TOKEN }}
           command: pages deploy ./storybook-static --project-name=react-hook-primitives-storybook
 
       # Creates a Release PR or Publishes to NPM
-      - name: Library::pr|publish
+      - name: Library | PR or Publish
         id: changesets
         uses: changesets/action@v1
         with:
