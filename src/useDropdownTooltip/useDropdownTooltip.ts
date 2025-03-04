@@ -1,14 +1,10 @@
 import { type RefCallback, useCallback, useId, useMemo } from "react";
 import { exhaustiveMatchGuard } from "ts-jolt/isomorphic";
 
-
-
 import { type DropdownOptions, useDropdown } from "#/useDropdown/index.js";
 import { isDropdownOpen } from "#/useDropdown/useDropdown.utils.js";
 
 import { LOG_UDT } from "./use-dropdown-tooltip.utils.js";
-
-
 
 export type UseTooltipOptionsTooltip = DropdownOptions & {
   /**

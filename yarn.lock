@@ -2013,7 +2013,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__core@npm:^7, @types/babel__core@npm:^7.18.0":
+"@types/babel__core@npm:^7.18.0, @types/babel__core@npm:^7.20.5":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
   dependencies:
@@ -2112,7 +2112,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19":
+"@types/react-dom@npm:^19.0.4":
   version: 19.0.4
   resolution: "@types/react-dom@npm:19.0.4"
   peerDependencies:
@@ -2121,7 +2121,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19":
+"@types/react@npm:^19.0.10":
   version: 19.0.10
   resolution: "@types/react@npm:19.0.10"
   dependencies:
@@ -3655,19 +3655,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-greenflash@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "eslint-config-greenflash@npm:0.2.0"
+"eslint-config-greenflash@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "eslint-config-greenflash@npm:0.2.1"
   dependencies:
+    "@changesets/cli": "npm:^2.28.1"
     "@eslint/js": "npm:^9.21.0"
     eslint: "npm:^9.21.0"
+    eslint-import-resolver-typescript: "npm:^3.8.3"
     eslint-plugin-import: "npm:^2.31.0"
     eslint-plugin-react: "npm:^7.37.4"
     eslint-plugin-react-hooks: "npm:^5.2.0"
     globals: "npm:^16.0.0"
     typescript: "npm:^5.8.2"
     typescript-eslint: "npm:^8.26.0"
-  checksum: 10c0/d6a6b64616fb4057192c158911519534852cae2b7ea131547f264956d256c670ecf1df44787fee0a24ac065b09322799899dc5dfa491189746fbff343473fe6f
+  checksum: 10c0/47ed76fdd4680d03de65addfbb4b3b520ec80b67cf221f7ef3e085a3df6f5e085cad6d97c39327b64bb9f7e6de1e2518b3fb0ce7fac15f0a2f108579c5345694
   languageName: node
   linkType: hard
 
@@ -6129,18 +6131,16 @@ __metadata:
     "@storybook/react": "npm:^8.6.3"
     "@storybook/react-vite": "npm:^8.6.3"
     "@storybook/test": "npm:^8.6.3"
-    "@types/babel__core": "npm:^7"
+    "@types/babel__core": "npm:^7.20.5"
     "@types/node": "npm:^22.13.9"
-    "@types/react": "npm:^19"
-    "@types/react-dom": "npm:^19"
+    "@types/react": "npm:^19.0.10"
+    "@types/react-dom": "npm:^19.0.4"
     "@vitejs/plugin-react-swc": "npm:^3.8.0"
     "@vitest/browser": "npm:^3.0.7"
     "@vitest/coverage-v8": "npm:^3.0.7"
     "@wyw-in-js/vite": "npm:^0.5.5"
     eslint: "npm:^9.21.0"
-    eslint-config-greenflash: "npm:^0.2.0"
-    eslint-import-resolver-typescript: "npm:^3.8.3"
-    eslint-plugin-import: "npm:^2.31.0"
+    eslint-config-greenflash: "npm:^0.2.1"
     isoscribe: "npm:^0.1.4"
     playwright: "npm:^1.50.1"
     react: "npm:^19.0.0"
