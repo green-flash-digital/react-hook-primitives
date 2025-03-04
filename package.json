@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A collection of foundational, lower-level hooks that can be used to progressively build complex components & interactions; built solely using baseline on web standards.",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/green-flash-digital/react-hook-primitives.git"
@@ -12,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/green-flash-digital/react-hook-primitives/issues"
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/green-flash-digital/react-hook-primitives#readme",
   "packageManager": "yarn@4.7.0",
   "scripts": {
@@ -59,6 +65,7 @@
     "storybook": "^8.6.3",
     "typescript": "^5.8.2",
     "vite": "^6.2.0",
-    "vitest": "^3.0.7"
+    "vitest": "^3.0.7",
+    "wrangler": "^3.112.0"
   }
 }

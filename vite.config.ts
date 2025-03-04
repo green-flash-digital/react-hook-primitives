@@ -21,7 +21,8 @@ export default defineConfig({
         preserveModules: true,
       },
       external: Object.keys(packageJson.dependencies).concat(
-        "react/jsx-runtime"
+        "react/jsx-runtime", 
+        "ts-jolt/isomorphic"
       ),
     },
   },
