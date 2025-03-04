@@ -4,6 +4,10 @@ import type { ModalDefaultState } from "#/useModalDialog/index.js";
 
 import { ModalContext, type ModalContextType } from "./Modal.context.js";
 
+
+
+
+
 export type ModalProviderProps<T extends ModalDefaultState> = {
   children: ReactNode;
   initialState: T | undefined;

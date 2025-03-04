@@ -35,9 +35,7 @@ class ButteryComponentLoggers {
     });
 
     if (typeof window !== "undefined") {
-      // Expose logger to the global window object in the browser
-      // @ts-expect-error the window object doesn't have this but that's okay.
-      window.#_LOGS = this;
+      window.__rhp_logs = this;
     }
   }
 }

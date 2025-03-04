@@ -4,14 +4,13 @@ import react from "@vitejs/plugin-react-swc";
 import wyw from "@wyw-in-js/vite";
 import { defineConfig } from "vite";
 
-
 import packageJson from "./package.json" with { type: "json"};
 
 export default defineConfig({
   build: {
-    outDir: path.resolve(import.meta.dirname, "./dist/lib"),
+    outDir: path.resolve(import.meta.dirname, "./dist"),
     lib: {
-      entry: path.resolve(import.meta.dirname, "./lib/index.ts"),
+      entry: path.resolve(import.meta.dirname, "./src/index.ts"),
       fileName(_format, entryName) {
         return `${entryName}.js`;
       },
@@ -22,13 +21,14 @@ export default defineConfig({
         preserveModules: true,
       },
       external: Object.keys(packageJson.dependencies).concat(
-        "react/jsx-runtime"
+        "react/jsx-runtime", 
+        "ts-jolt/isomorphic"
       ),
     },
   },
   resolve: {
     alias: {
-      "@RHP": path.resolve(import.meta.dirname, "./lib"),
+      "#": path.resolve(import.meta.dirname, "./src"),
     },
   },
   plugins: [

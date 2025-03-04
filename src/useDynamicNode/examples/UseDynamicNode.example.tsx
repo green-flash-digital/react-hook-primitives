@@ -1,6 +1,7 @@
-import { useDynamicNode } from "#/useDynamicNode/index.js";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+
+import { useDynamicNode } from "../useDynamicNode.js";
 
 export default () => {
   const { getDynamicNode, destroyNode } = useDynamicNode();
@@ -29,7 +30,7 @@ export default () => {
               padding: "2rem",
             }}
           >
-            I'm in a dynamic Node
+            I&apos;m in a dynamic Node
           </div>,
           getDynamicNode()
         )}
