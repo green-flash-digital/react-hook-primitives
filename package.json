@@ -6,6 +6,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/green-flash-digital/react-hook-primitives.git"
