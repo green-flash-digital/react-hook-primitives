@@ -1,5 +1,11 @@
 # react-hook-primitives
 
+## 0.2.3
+
+### Patch Changes
+
+- 763f2f9: Adds ability to import default styles included with package
+
 ## 0.2.2
 
 ### Patch Changes
