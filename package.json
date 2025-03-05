@@ -1,6 +1,6 @@
 {
   "name": "react-hook-primitives",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A collection of foundational, lower-level hooks that can be used to progressively build complex components & interactions; built solely using baseline on web standards.",
   "type": "module",
   "publishConfig": {
