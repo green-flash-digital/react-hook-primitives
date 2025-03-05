@@ -19,14 +19,15 @@
     "url": "https://github.com/green-flash-digital/react-hook-primitives/issues"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "homepage": "https://github.com/green-flash-digital/react-hook-primitives#readme",
   "packageManager": "yarn@4.7.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build && yarn types:build",
-    "types:build": "yarn tsc --project tsconfig.types.json",
+    "types:build": "yarn tsc --project ./tsconfig.types.json",
     "lint": "eslint src/**",
     "cli:build": "",
     "cli:dev": "",
