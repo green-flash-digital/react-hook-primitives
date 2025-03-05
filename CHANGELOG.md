@@ -1,5 +1,11 @@
 # react-hook-primitives
 
+## 0.2.2
+
+### Patch Changes
+
+- 47429c9: Updates tsconfig to output types in the correct folder
+
 ## 0.2.1
 
 ### Patch Changes
